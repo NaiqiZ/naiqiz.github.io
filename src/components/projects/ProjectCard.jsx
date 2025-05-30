@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {
   Button, Card, Badge, Col,
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import { ThemeContext } from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 const styles = {
@@ -16,6 +15,8 @@ const styles = {
   },
   cardStyle: {
     borderRadius: 10,
+    backgroundColor: '#ffffff',
+    borderColor: '#dddddd',
   },
   cardTitleStyle: {
     fontSize: 24,
@@ -24,32 +25,21 @@ const styles = {
   cardTextStyle: {
     textAlign: 'left',
   },
-  linkStyle: {
-    textDecoration: 'none',
-    padding: 10,
-  },
   buttonStyle: {
     margin: 5,
   },
+  cardFooterStyle: {
+    backgroundColor: '#f7f7f7',
+  },
 };
 
-const ProjectCard = (props) => {
-  const theme = useContext(ThemeContext);
+const ProjectCard = ({ project }) => {
   const parseBodyText = (text) => <ReactMarkdown children={text} />;
-
-  const { project } = props;
 
   return (
     <Col>
-      <Card
-        style={{
-          ...styles.cardStyle,
-          backgroundColor: theme.cardBackground,
-          borderColor: theme.cardBorderColor,
-        }}
-        text={theme.bsSecondaryVariant}
-      >
-        <Card.Img variant="top" src={project?.image} />
+      <Card style={styles.cardStyle} text="dark">
+        {project?.image && <Card.Img variant="top" src={project.image} />}
         <Card.Body>
           <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>
@@ -62,28 +52,30 @@ const ProjectCard = (props) => {
             <Button
               key={link.href}
               style={styles.buttonStyle}
-              variant={'outline-' + theme.bsSecondaryVariant}
+              variant="outline-dark"
               onClick={() => window.open(link.href, '_blank')}
             >
               {link.text}
             </Button>
           ))}
         </Card.Body>
-        {project?.contributors && project.contributors.length > 0 && (
-        <Card.Body>
-          <Card.Text style={{ fontStyle: 'italic', fontSize: '0.9em' }}>
-            <strong>Contributors:</strong> {project.contributors.join(', ')}
-          </Card.Text>
-        </Card.Body>
-      )}
-        {project.tags && (
-          <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
+
+        {project?.contributors?.length > 0 && (
+          <Card.Body>
+            <Card.Text style={{ fontStyle: 'italic', fontSize: '0.9em' }}>
+              <strong>Contributors:</strong> {project.contributors.join(', ')}
+            </Card.Text>
+          </Card.Body>
+        )}
+
+        {project?.tags && (
+          <Card.Footer style={styles.cardFooterStyle}>
             {project.tags.map((tag) => (
               <Badge
                 key={tag}
                 pill
-                bg={theme.bsSecondaryVariant}
-                text={theme.bsPrimaryVariant}
+                bg="dark"
+                text="light"
                 style={styles.badgeStyle}
               >
                 {tag}
@@ -106,6 +98,7 @@ ProjectCard.propTypes = {
       href: PropTypes.string.isRequired,
     })),
     tags: PropTypes.arrayOf(PropTypes.string),
+    contributors: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
-import Fade from 'react-reveal';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -8,9 +7,17 @@ import FallbackSpinner from './FallbackSpinner';
 const styles = {
   nameStyle: {
     fontSize: '5em',
+    fontWeight: 700,
   },
-  inlineChild: {
-    display: 'inline-block',
+  roleLineStyle: {
+    display: 'flex',
+    alignItems: 'center',
+    fontSize: '2em',
+    fontWeight: 700, // ensure both text and Typewriter share this weight
+  },
+  typewriterWrapper: {
+    fontWeight: 700,
+    fontFamily: 'inherit', // make sure it inherits same font as "I'm"
   },
   mainContainer: {
     height: '100%',
@@ -30,27 +37,31 @@ function Home() {
     })
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch((err) => console.error(err));
   }, []);
 
   return data ? (
-    <Fade>
-      <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
-        <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+    <div style={styles.mainContainer}>
+      <h1 style={styles.nameStyle}>{data.name}</h1>
+      <h2 style={styles.roleLineStyle}>
+        <span style={{ marginRight: 6 }}>I'm</span>
+        <span style={styles.typewriterWrapper}>
           <Typewriter
             options={{
               loop: true,
               autoStart: true,
-              strings: data?.roles,
+              strings: data.roles,
             }}
           />
-        </div>
-        <Social />
-      </div>
-    </Fade>
-  ) : <FallbackSpinner />;
+        </span>
+      </h2>
+      <Social />
+    </div>
+  ) : (
+    <FallbackSpinner />
+  );
 }
 
 export default Home;
+
+

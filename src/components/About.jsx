@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -59,7 +58,6 @@ function About({ header }) {
       <div className="section-content-container">
         <Container>
           {data ? (
-            <Fade>
               <div style={styles.row}>
                 {/* Text on the left */}
                 <div style={styles.introTextContainer}>
@@ -75,7 +73,6 @@ function About({ header }) {
                   />
                 </div>
               </div>
-            </Fade>
           ) : (
             <FallbackSpinner />
           )}
