@@ -1,150 +1,213 @@
 {
     "projects" : [
+       
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
-            ]
+  "image": "images/projects/sanofi-alab.png",
+  "title": "Sanofi A-Lab – Patient Like Me",
+  "bodyText": "- Engineered a super-graph connecting EHR data and the Precision Medicine Knowledge Graph \n- Predicted poentential patient cohorts to TNF-alpha inhibitors, improving trial targeting efficacy by 30%\n- Awarded 1st place in the MIT Analytics Lab Cup",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/ALAB_Sanofi_PatientLikeMe"
+    },
+    {
+      "text": "Final Report",
+      "href": "https://github.com/NaiqiZ/ALAB_Sanofi_PatientLikeMe/tree/main/Report/A_Lab_Project_Report Final.pdf"
+    },
+    {
+      "text": "Presentation Slides",
+      "href": "https://github.com/NaiqiZ/ALAB_Sanofi_PatientLikeMe/tree/main/Presentation/Sanofi A-Lab Patient Like Me Final Presentation.pdf"
+    }
+  ],
+  "tags": [
+    "Neural Network",
+    "Knowledge Graph",
+    "Healthcare"
+  ],
+  "contributors": [
+    "Jaeyoon Wang",
+    "Nidhish Nerur",
+    "Hunter Sporn"
+  ]
         },
-        {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+    {
+  "image": "images/projects/MAFLD.png",
+  "title": "Early Prognosis of MAFLD Progression Using Deep Learning",
+  "bodyText": "- Developed deep learning models (Binary Classification, Time-to-Event, and DeepSurv) to predict MAFLD progression from structured EHR data\n- Applied SHAP analysis and regression to identify predictive biomarkers",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression"
+    },
+    {
+      "text": "Final Report",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression/blob/main/Report/mlhc_paper.pdf"
+    },
+    {
+      "text": "Poster",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression/blob/main/Poster/MLHC_Poster.pdf"
+    }
+  ],
+  "tags": [
+    "Deep Learning",
+    "Survival Analysis",
+    "Healthcare AI"
+  ],
+  "contributors": [
+    "Jeannie She",
+    "Erica Song"
+  ]
+},
+
+
+
+         {
+            "image" : "images/projects/opti.png",
+            "title": "Accelerating Emergency Response - Ambulance Dispatch Optimization",
+            "bodyText": "- Built optimization models (Min-Sum, Min-Max, Robust) to reduce ambulance response times across Manhattan\n- Performed sensitivity analysis to recommend station staffing and identified underserved areas",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
+    "text": "GitHub",
+    "href": "https://github.com/NaiqiZ/Optimization_Ambulance_Dispatch_for_Manhattan"
+  },
+  {
+    "text": "Final Report",
+    "href": "https://github.com/NaiqiZ/Optimization_Ambulance_Dispatch_for_Manhattan/blob/main/Presentation/Optimization_Project_Report.pdf"
+  },
+  {
+    "text": "Presentation Slides",
+    "href": "https://github.com/NaiqiZ/Optimization_Ambulance_Dispatch_for_Manhattan/blob/main/Presentation/Optimization_project_slides.pdf"
+  },
+  {
+    "text": "Video Demo",
+    "href": "https://github.com/NaiqiZ/Optimization_Ambulance_Dispatch_for_Manhattan/blob/main/Presentation/OptiProjectVideo_Presentation.mp4"
+  } 
+],
+
             "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
-            ]
+                "Optimization",
+                "Public Health",
+                "Sensitivity Analysis "
+            ],
+              "contributors": [
+    "Ellie Yang",
+    "Sneha Kumar"
+  ]
+
         },
+
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
-            ]
-        }
+  "image": "images/projects/campbell_genai.png",
+  "title": "Campbell GenAI Chatbot for Marketing Analytics",
+  "bodyText": "- Built a multi-agent GenAI chatbot using LangGraph and MLflow for Campbell’s marketing team\n- Enabled structured data querying, LLM-based reasoning, and automated marketing insights",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/GenAI_Campbell_Chatbot"
+    },
+    {
+      "text": "Final Report",
+      "href": "https://github.com/NaiqiZ/GenAI_Campbell_Chatbot/blob/main/Report/Campbell%20GenAI%20Lab%20Final%20Report.pdf"
+    },
+    {
+      "text": "Presentation Slides",
+      "href": "https://github.com/NaiqiZ/GenAI_Campbell_Chatbot/blob/main/Presentation/Campbell_Slides.pdf"
+    },
+    {
+      "text": "Video Demo",
+      "href": "https://github.com/NaiqiZ/GenAI_Campbell_Chatbot/blob/main/Demo/Campbell_DEMO.mp4"
+    }
+  ],
+  "tags": [
+    "LangGraph",
+    "Databricks",
+    "Marketing Analytics",
+    "Generative AI"
+  ],
+  "contributors": [
+    "Ellie Yang",
+    "Brenda Silva",
+    "Yu He"
+  ]
+},
+{
+  "image": "images/projects/ML_twitter.png",
+  "title": "ML-Powered Health News Recommendation from Twitter",
+  "bodyText": "- Built a personalized recommendation system for public health content using tweet data\n- Combined natural language processing, clustering, and engagement scoring to rank relevant tweets by user interests",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/ML_TwitterHealthNews_Recommendation"
+    },
+    {
+      "text": "Final Report",
+      "href": "https://github.com/NaiqiZ/ML_TwitterHealthNews_Recommendation/blob/main/Report/ML_Report_Final.pdf"
+    },
+    {
+      "text": "Presentation Slides",
+      "href": "https://github.com/NaiqiZ/ML_TwitterHealthNews_Recommendation/blob/main/Presentation/Health_Tweets_Recommendation.pdf"
+    }
+  ],
+  "tags": [
+    "NLP",
+    "Recommendation System",
+    "Social Media Analytics"
+  ],
+  "contributors": [
+    "Yuki Yu"
+  ]
+},
+
+  {"image": "images/projects/AltORF.png",
+  "title": "Evolutionary Analysis of Alternative Open Reading Frames Across Mammalian Species",
+  "bodyText": "- Constructed bioinformatics pipelines to analyze 86 internal ORFs (int-ORFs) across 12 mammalian genomes\n- Modified the OLGenie method to assess evolutionary constraints and identify selection pressures on overlapping coding regions",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/Evolution_of_Alt_ORFs"
+    },
+    {
+      "text": "TAGC 2024 Poster",
+      "href": "https://github.com/NaiqiZ/Evolution_of_Alt_ORFs/blob/clean-main/Poster/TAGC24.pdf"
+    }
+  ],
+  "tags": [
+    "Genomic Data",
+    "Evolutionary Analysis",
+    "Bioinformatics"
+  ],
+  "advisors": [
+    "Dr. April Wei",
+    "Dr. Zachary Ardern"
+  ]
+},
+
+{
+  "image": "images/projects/Storm_R.png",
+  "title": "R Package for Hurricane Tracking and Analysis",
+  "bodyText": "- Developed an R package using HURDAT Atlantic storm data to track hurricane paths and interpolate storm trajectories\n- Crafted a vignette to demonstrate storm track visualization and climate trend analysis from 2020 to 2022",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/Rpackage_HurricaneTracking"
+    },
+    {
+      "text": "R Package",
+      "href": "https://github.com/NaiqiZ/Rpackage_HurricaneTracking/tree/main/Rpackage"
+    },
+    {
+      "text": "Vignette",
+      "href": "https://github.com/NaiqiZ/Rpackage_HurricaneTracking/blob/main/vignettes/annotated-VIG.pdf"
+    }
+  ],
+  "tags": [
+    "R Package",
+    "Geospatial Analysis",
+    "Climate Science"
+  ],
+  "contributors": [
+    "Kayla Yang"
+  ]
+}
     ]
 }

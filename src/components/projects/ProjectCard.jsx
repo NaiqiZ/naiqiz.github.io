@@ -69,6 +69,13 @@ const ProjectCard = (props) => {
             </Button>
           ))}
         </Card.Body>
+        {project?.contributors && project.contributors.length > 0 && (
+        <Card.Body>
+          <Card.Text style={{ fontStyle: 'italic', fontSize: '0.9em' }}>
+            <strong>Contributors:</strong> {project.contributors.join(', ')}
+          </Card.Text>
+        </Card.Body>
+      )}
         {project.tags && (
           <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
             {project.tags.map((tag) => (

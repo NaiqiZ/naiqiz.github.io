@@ -245,7 +245,7 @@ It has 2 keys, *logo* and *sections*.
 ```
 {
     "about": " This is where you can describe about **yourself**.",
-    "imageSource": "images/about/profile.png"
+    "imageSource": "images/about/profile.jpg"
     
 }
 ```
