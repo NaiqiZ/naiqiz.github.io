@@ -62,7 +62,7 @@
 
 
          {
-            "image" : "images/projects/optimization.png",
+            "image" : "images/projects/MAFLD.png",
             "title": "Accelerating Emergency Response - Ambulance Dispatch Optimization",
             "bodyText": "- Built optimization models (Min-Sum, Min-Max, Robust) to reduce ambulance response times across Manhattan\n- Performed sensitivity analysis to recommend station staffing and identified underserved areas",
             "links": [
