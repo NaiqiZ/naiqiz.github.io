@@ -59,13 +59,40 @@
   ]
 },
 
+    {
+  "image": "images/projects/MAFLD.png",
+  "title": "Early Prognosis of MAFLD Progression Using Deep Learning",
+  "bodyText": "- Developed deep learning models (Binary Classification, Time-to-Event, and DeepSurv) to predict MAFLD progression from structured EHR data\n- Applied SHAP analysis and regression to identify predictive biomarkers",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression"
+    },
+    {
+      "text": "Final Report",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression/blob/main/Report/mlhc_paper.pdf"
+    },
+    {
+      "text": "Poster",
+      "href": "https://github.com/NaiqiZ/MLforHealthcare_MAFLD_Progression/blob/main/Poster/MLHC_Poster.pdf"
+    }
+  ],
+  "tags": [
+    "Deep Learning",
+    "Survival Analysis",
+    "Healthcare AI"
+  ],
+  "contributors": [
+    "Jeannie She",
+    "Erica Song"
+  ]
+},
 
-
-         {
-            "image" : "images/projects/MAFLD.png",
-            "title": "Accelerating Emergency Response - Ambulance Dispatch Optimization",
-            "bodyText": "- Built optimization models (Min-Sum, Min-Max, Robust) to reduce ambulance response times across Manhattan\n- Performed sensitivity analysis to recommend station staffing and identified underserved areas",
-            "links": [
+{
+  "image" : "images/projects/optimization.png",
+  "title": "Accelerating Emergency Response - Ambulance Dispatch Optimization",
+  "bodyText": "- Built optimization models (Min-Sum, Min-Max, Robust) to reduce ambulance response times across Manhattan\n- Performed sensitivity analysis to recommend station staffing and identified underserved areas",
+  "links": [
                 {
     "text": "GitHub",
     "href": "https://github.com/NaiqiZ/Optimization_Ambulance_Dispatch_for_Manhattan"
